@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+        .user-form{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+.hobbies{
+    display: flex;
+    flex-direction: column;
+}
+.textarea{ 
+    box-sizing: inherit;
+}
+
+    </style>
+    
+</head>
+<body>
+    <h1>Forms</h1>
+
+<div class="user-form">
+    <label for="Name">Name</label>
+    <input type="text" placeholder="Enter your name" />
+    <label for="Password">Password</label>
+    <input type="password" placeholder="Enter your password" />
+    <label for="Age">Age</label>
+    <input type="number" placeholder="Enter your age" />
+  <div>
+      <h4>Gender</h4>
+      <input type="radio" name="gender" id="male"/> <label for="male">Male</label>    
+      <input type="radio" name="gender" id="female"/> <label for="female">Female</label>
+  </div>  
+  <div>
+      <h4>Hobbies</h4>
+      <input type="checkbox" disabled name="hobbies" id="Cricket"/> <label for="Cricket">Cricket</label>
+      <input type="checkbox" name="hobbies" id="Travelling"/> <label for="Travelling">Travelling</label>
+      <input type="checkbox" name="hobbies" id="Music"/> <label for="Music">Music</label>
+      <input type="checkbox" name="hobbies" id="Watchingmovies"/> <label for="Watchingmovies">Watchingmovies</label>
+      <input type="checkbox" name="hobbies" id="Volleyball"/> <label for="Volleyball">Volleyball</label>
+  </div> 
+</div>
+ <div>
+     <h4>State</h4>
+    <label>Please choose one or more states: 
+     <select name="state">
+      <optgroup label="South States">
+         <option value="TN">Tamil Nadu</option>
+         <option value="KL">Kerala</option>
+         <option value="TEL">Telangana</option>
+         <option value="KA">Karnataka</option>
+     </optgroup>
+     <optgroup label="North States">
+         <option value="MH">Maharashtra</option>
+         <option value="DL">Delhi</option>
+         <option value="PJ">Punjab</option>
+         <option value="RAJ">Rajasthan</option>
+     </optgroup>
+     <optgroup label="East States">
+         <option value="BH">Bihar</option>
+         <option value="JH">Jharkhand</option>
+         <option value="WB">West Bengal</option>
+         <option value="KOL">Kolkata</option>
+     </optgroup>
+     </select>
+    </label> 
+ </div>
+ <div>
+     <h4>Tweet</h4>
+     
+     <textarea placeholder="Tell us your comment"cols="20" rows="10"></textarea>
+ </div>
+</body>
+</html>
